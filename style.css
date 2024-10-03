@@ -1,0 +1,301 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(90deg, #007bff, #00bfa5);
+    color: #fff;
+    text-align: center;
+    padding: 50px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-text {
+    max-width: 600px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+header a {
+    color: #ffde59;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    background: #ffffff;
+    padding: 40px 30px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #00bfa5;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+ul li::before {
+    content: "\2022";
+    color: #007bff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.experience-item, .project-item {
+    margin-bottom: 30px;
+    border-left: 4px solid #007bff;
+    padding-left: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.experience-item:hover, .project-item:hover {
+    background: #f0f8ff;
+    border-left-color: #00bfa5;
+}
+
+/* Links and Highlights */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #00bfa5;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-icon {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    vertical-align: middle; /* Aligns the icon with the text */
+    margin-left: 5px; /* Space between text and icon */
+}
+
+
+
+/* Cards for Projects */
+.project-item {
+    padding: 20px;
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Buttons for External Links */
+button {
+    background: linear-gradient(90deg, #007bff, #00bfa5);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #00bfa5, #007bff);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    section {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+}
+
+/* Reset default browser styles for ul */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Navbar styles */
+.navbar {
+    padding: 0;
+    background-color: #2c3e50; /* Darker shade for a professional look */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    text-decoration: none !important;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Adding a shadow for better separation */
+}
+
+.navbar ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.8em 0;
+    margin: 0;
+    list-style: none;
+
+
+}
+
+.navbar ul li {
+    margin: 0 10px;
+
+
+}
+
+.navbar ul li a {
+    color: #ecf0f1; /* Light color for good contrast */
+    text-decoration: none !important;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #34495e; /* Subtle hover effect */
+    color: #ffffff; /* Ensure readability on hover */
+    border-radius: 4px;
+
+}
+
+/* Responsive design for navbar */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        background-color: #2c3e50;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+    }
+
+    .navbar ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        cursor: pointer;
+        color: #ecf0f1;
+        font-size: 1.5em;
+    }
+}
+
+/* Add padding to prevent content from being hidden under navbar */
+body {
+    padding-top: 50px; 
+}
+
+/* General styles */
+.header-content {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+.download-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px; /* Adjusts the spacing above the button */
+}
+
+.download-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
