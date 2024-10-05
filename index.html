@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piyush Singh Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -15,13 +16,25 @@
                 <a href="#experience" style="text-decoration: none;">Experience</a>
                 <a href="#projects" style="text-decoration: none;">Projects</a>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScDLj2P36YFM9-0sSnF_QrO0IKL5_kdLDuLf4nqIz5et7x-AQ/viewform?usp=sf_link" style="text-decoration: none;">Contact me</a>
+                <a href="/gears.html" style="text-decoration: none;">Gears</a>
+                <a href="/travel.html" style="text-decoration: none;">Travel with me</a>
+                <a href="https://www.amazon.in/Mom-Says-Girlfriend-Subhasis-Das/dp/8129117037/ref=sr_1_1?crid=3FRZAV67OHO6E&dib=eyJ2IjoiMSJ9.92X1vRoay1B4raxURcT8Kz9l7nFZM1q_rcO8oYqYO4A-mrQX5XhyWJaMgT9qQeesCPObHFL5VS1yR4z4IH2eYvP50dkwlMrKdWpx-mx1cWOu4oJDfIIgVbeKQB2-4uLZR3fFsNmB5jkvzdcYRXIxuw.whpS8lr6zZ8Ex6L3z0U_EhouxbilZoBFtw_xjlgeHk4&dib_tag=se&keywords=mom+says+no+girlfriend&qid=1728129659&sprefix=mom+say%2Caps%2C290&sr=8-1" style="text-decoration: none;">My Girlfriend</a>
             </ul>
         </nav>
         <div class="header-content" id="home">
             <img src="https://lh3.googleusercontent.com/a/ACg8ocI4088zeboUib2NHcZJ_a-GKKHrWjMNb8_CvO8CieYStJdJLbE=s576-c-no" alt="Piyush Singh" class="profile-photo">
             <div class="header-text">
-                <h1>Piyush Singh</h1>
-                <p>Software Engineer | Delhi, India</p>
+               <h1>
+                <div class="leftsection">
+                    Hi, My name is <span class="purple">Piyush</span>
+                    <div>and I am a passionate</div>
+                    <span id="element"></span>
+                    </div>
+                  </div>
+               </h1>
+               
+                <p> <i class="fas fa-map-marker-alt"></i>
+                    Delhi, India</p>
                 <p>Email: <a href="mailto:piyushkhati.dev@gmail.com" style="text-decoration: none;">piyushkhati.dev@gmail.com</a></p>
                 <p>
                     LinkedIn: <a href="https://www.linkedin.com/in/piysing14" target="_blank" style="text-decoration: none;">piysing14</a> |
@@ -31,6 +44,7 @@
                 <a href="Piyush_resume.pdf" download>
                     <button class="download-btn">Download Resume</button>
                 </a>
+                
             </div>
         </div>
     </header>
@@ -116,8 +130,24 @@
             <a href="https://github.com/Piysing14" target="_blank">
                 <img src="https://imgs.search.brave.com/w5LFW4ei3PC6DUOkw2jcpG1OVDzoYhDqENlECFBWUg8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8y/LzI0L0dpdGh1Yl9s/b2dvX3N2Zy5zdmc" alt="GitHub" class="social-icon">
             </a>
+            <a href="https://x.com/Piyushkhati14" target="_blank">
+                <img src="https://imgs.search.brave.com/Zgc8qseOlsxtsVsjwBZL1eIMEYYzU4Q9mTIxj6xnAG4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/YnJhbmRmZXRjaC5p/by94LmNvbS9mYWxs/YmFjay90cmFuc3Bh/cmVudC90aGVtZS9k/YXJrL2gvNTEyL3cv/NTEyL2ljb24_dD0x/NzE3Nzc0ODI3NTM0.jpeg" alt="GitHub" class="social-icon">
+            </a>
         </p>
     </footer>
-    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#element", {
+          strings: [
+            "<i>Software</i> Engineer.",
+            "Web developer.",
+            "Backend Developer.",
+            "Tech Enthusiast.",
+            "Wanderer."
+          ],
+          typeSpeed: 50,
+        });
+      </script>
 </body>
 </html>
+

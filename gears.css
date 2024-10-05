@@ -1,0 +1,109 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+
+  .gear-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .gear-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+  }
+
+  .gear-item:hover {
+    transform: scale(1.02);
+  }
+
+  .gear-image img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .gear-content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .gear-content h2 {
+    color: #00bfa5;
+  }
+
+  .gear-content p {
+    margin: 10px 0;
+    color: #666;
+  }
+
+  .gear-content a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .gear-content a:hover {
+    background-color: #0056b3;
+  }
+
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-icon {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    vertical-align: middle; /* Aligns the icon with the text */
+    margin-left: 5px; /* Space between text and icon */
+}
+
+.btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn a:hover {
+    background-color: #0056b3;
+}
