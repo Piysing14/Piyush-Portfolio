@@ -41,6 +41,12 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.profile-photo:hover {
+    transform: scale(1.25); /* Scale effect on hover */
+    transition: transform 0.7s; /* Smooth transition */
+
+}
+
 .header-text {
     max-width: 600px;
 }
@@ -119,6 +125,9 @@ a {
 
 a:hover {
     color: #00bfa5;
+    transform: scale(1.25); /* Scale effect on hover */
+    transition: transform 0.2s; /* Smooth transition */
+
 }
 
 footer {
