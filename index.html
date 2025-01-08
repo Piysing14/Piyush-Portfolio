@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piyush Singh Portfolio</title>
+    <title>Piyush's Portfolio🚀</title>
     <link rel="icon" href="https://img.icons8.com/?size=100&id=LZtA6WbZwEkN&format=png&color=000000">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
+    <div id="splash" class="fixed inset-0 z-50 flex justify-center items-center">
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+          <source src="https://res.cloudinary.com/dgg35phxr/video/upload/v1736348485/Intro_tmywel.mp4">
+         
+        </video>
+      </div>
+      <main id="main-content" class="hidden">      
 
     <!-- Header -->
     <header class="bg-gradient-to-r from-blue-600 to-indigo-800 text-white py-6 shadow-lg">
@@ -349,7 +356,14 @@
         </a>
     </div>
 </footer>
+</main>
 
+<script>
+    setTimeout(() => {
+      document.getElementById('splash').classList.add('hidden');
+      document.getElementById('main-content').classList.remove('hidden');
+    }, 4000); 
+  </script>
 
     
 
