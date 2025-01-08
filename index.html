@@ -5,159 +5,353 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piyush Singh Portfolio</title>
     <link rel="icon" href="https://img.icons8.com/?size=100&id=LZtA6WbZwEkN&format=png&color=000000">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <a href="#home" style="text-decoration: none;">Home</a>
-                <a href="#about" style="text-decoration: none;">About Me</a>
-                <a href="#experience" style="text-decoration: none;">Experience</a>
-                <a href="#projects" style="text-decoration: none;">Projects</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScDLj2P36YFM9-0sSnF_QrO0IKL5_kdLDuLf4nqIz5et7x-AQ/viewform?usp=sf_link" target="_blank" style="text-decoration: none;">Contact me</a>
-                <a href="https://piysing14.github.io/gear/" style="text-decoration: none;">Gears</a>
-                <a href="https://piysing14.github.io/travel-page/" style="text-decoration: none;">Travel with me</a>
-            </ul>
-        </nav>
-        <div class="header-content" id="home">
-            <img src="https://lh3.googleusercontent.com/a/ACg8ocI4088zeboUib2NHcZJ_a-GKKHrWjMNb8_CvO8CieYStJdJLbE=s576-c-no" alt="Piyush Singh" class="profile-photo">
-            <div class="header-text">
-               <h1>
-                <div class="leftsection">
-                    Hi, My name is <span class="purple">Piyush</span>
-                    <div>and I am a passionate</div>
-                    <span id="element"></span>
-                    </div>
-                  </div>
-               </h1>
-               
-                <p> <i class="fas fa-map-marker-alt"></i>
-                    Noida, UP, India</p>
-                <p>Email: <a href="mailto:piyushkhati.dev@gmail.com" style="text-decoration: none;">piyushkhati.dev@gmail.com</a></p>
-                <p>
-                    LinkedIn: <a href="https://www.linkedin.com/in/piysing14" target="_blank" style="text-decoration: none;">piysing14</a> |
-                    GitHub: <a href="https://github.com/Piysing14" target="_blank" style="text-decoration: none;">piysing14</a>
-                </p>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-                <a href="Piyush Resume Capgemini.pdf" download>
-                    <button class="download-btn">Download Resume</button>
-                </a>
-                
-            </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-800 text-white py-6 shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6">
+            <h1 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-600 hover:scale-105 transition-all duration-300 ease-in-out">
+                Portfolio
+            </h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-gray-200 text-lg font-semibold transition duration-200 transform hover:scale-105 font-serif">Home</a></li>
+                    <li><a href="#about" class="hover:text-gray-200 text-lg font-semibold transition duration-200 transform hover:scale-105 font-serif">About Me</a></li>
+                    <li><a href="#experience" class="hover:text-gray-200 text-lg font-semibold transition duration-200 transform hover:scale-105 font-serif">Experience</a></li>
+                    <li><a href="#projects" class="hover:text-gray-200 text-lg font-semibold transition duration-200 transform hover:scale-105 font-serif">Projects</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScDLj2P36YFM9-0sSnF_QrO0IKL5_kdLDuLf4nqIz5et7x-AQ/viewform?usp=sf_link" target="_blank" class="hover:text-gray-200 text-lg font-semibold transition duration-200 transform hover:scale-105 font-serif">Contact Me</a></li>
+                    <li><a href="https://piysing14.github.io/gear/" target="_blank" class="hover:text-gray-200 text-lg font-semibold transition duration-200 transform hover:scale-105 font-serif">Gears</a></li>
+                    <li><a href="https://piysing14.github.io/travel-page/" target="_blank" class="hover:text-gray-200 text-lg font-semibold transition duration-200 transform hover:scale-105 font-serif">Travel</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a dedicated full-stack web developer With a strong foundation in web development, I am currently working and upskilling with AlmaBetter as an SDE 1. I am committed to continuous learning and adapting to new technologies, making me versatile across various tech stacks. My passion for software development drives me to bring diligence, enthusiasm, and innovation to every opportunity.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Languages: HTML, JavaScript, C, C++</li>
-            <li>Technologies: MERN stack (MongoDB, Express.js, React.js, Node.js)</li>
-            <li>Frameworks: React JS, Node JS, Express, Bootstrap</li>
-            <li>Others: VSCode, Git, REST APIs, React Dev Tools</li>
-        </ul>
-    </section>
-
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="certification-item">
-            <a href="https://www.linkedin.com/in/piysing14/overlay/1723433727793/single-media-viewer/?profileId=ACoAADMKxeoB-gXTlZJd8623XEsMvLCCrh_hRn8" target="_blank"><h3>Full-Stack Web Development</h3></a>
-            <p>Apna College (2024)</p>
-        </div>
-        <div class="certification-item">
-            <a href="https://www.coursera.org/account/accomplishments/verify/9KGGDM6TWA3R?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank"><h3>C for Everyone: Programming Fundamentals </h3></a>
-            <p>University of California, Santa Cruz (2023)</p>
-        </div>
-        <div class="certification-item">
-           <a href="https://www.coursera.org/account/accomplishments/certificate/2CBNJ6D8SGNC" target="_blank"> <h3>Crash Course on Python</h3></a>
-            <p>Google (2023)</p>
-        </div>
-        <div class="certification-item">
-            <a href="https://www.coursera.org/account/accomplishments/certificate/2CBNJ6D8SGNC" target="_blank"> <h3>Introduction to Amazon web services</h3></a>
-             <p>AWS Educate (2020)</p>
-         </div>
-
-    </section>
     
 
-    <section id="experience">
-        <h2>Experience</h2>
-        
-        <div class="experience-item">
-            <h3>HTML Developer – Unicorn Demart | 04/2022-09/2022 (New Delhi)</h3>
-        </div>
-        <div class="experience-item">
-            <h3>Software Engineer – Capgemini | 10/2022-08/2024 (Gurugram, Haryana)</h3>
-        </div>
-        <div class="experience-item">
-            <h3>SDE 1 – AlmaBetter | 08/2024-Present (Remote)</h3>
-        </div>
-    </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-item">
-            <h3><a href="https://tranquiltrips.onrender.com/listings" target="_blank">Tranquil-Trips</a></h3>
-            <p>This project is a web application replicating the core features of Airbnb using the MERN stack.</p>
-            <ul>
-                <li>User Authentication with JWT</li>
-                <li>Property Listings</li>
-                <li>Review System for Properties</li>
-                <li>Personalized User Profiles</li>
-            </ul>
-        </div>
-        <div class="project-item">
-            <h3><a href="https://todolist-g6q7.onrender.com/" target="_blank">Todo-List</a></h3>
-            <p>A modern, intuitive To-Do List application developed with React for managing tasks efficiently.</p>
-            <ul>
-                <li>React Hooks for State Management</li>
-                <li>Component-Based Architecture</li>
-            </ul>
-        </div>
-        <div class="project-item">
-            <h3><a href="https://github.com/Piysing14/Weather-App-by-Piyush" target="_blank">Weather App</a></h3>
-            <p>A Weather Application developed using React and integrated with the OpenWeatherMap API.</p>
-            <ul>
-                <li>Dynamic Data Rendering</li>
-                <li>Weather API Integration</li>
-                <li>Asynchronous Operations</li>
-            </ul>
-        </div>
-    </section>
+    <!-- Hero Section -->
+<section id="home" class="text-center py-16 bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 text-white">
+    <div class="mx-auto w-full max-w-4xl px-6">
+        <!-- Image -->
+        <img src="https://lh3.googleusercontent.com/a/ACg8ocI4088zeboUib2NHcZJ_a-GKKHrWjMNb8_CvO8CieYStJdJLbE=s576-c-no" alt="Piyush Singh" class="w-48 h-48 sm:w-56 sm:h-56 mx-auto rounded-full shadow-xl transform transition duration-500 hover:scale-110">
 
-    <footer>
-        <p>Designed by Piyush Singh © 2024</p>
-        <p>
-            Follow me on 
-            <a href="https://www.instagram.com/piyushkhati14" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon">
-            </a>
-            <a href="https://www.linkedin.com/in/piysing14" target="_blank">
-                <img src="https://imgs.search.brave.com/SQsaFNKXL9x2pacICOrPpnY5c1-Eee1Vf0jOmntInaM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2NhL0xpbmtlZElu/X2xvZ29faW5pdGlh/bHMucG5n" alt="LinkedIn" class="social-icon">
-            </a>
-            <a href="https://github.com/Piysing14" target="_blank">
-                <img src="https://imgs.search.brave.com/w5LFW4ei3PC6DUOkw2jcpG1OVDzoYhDqENlECFBWUg8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8y/LzI0L0dpdGh1Yl9s/b2dvX3N2Zy5zdmc" alt="GitHub" class="social-icon">
-            </a>
+        <!-- Heading and Description -->
+        <h1 class="text-4xl sm:text-5xl mt-6 font-bold animate__animated animate__fadeInUp">
+            Hi, I’m <span class="text-purple-500 font-semibold ">Piyush</span>
+        </h1>
+        <p class="mt-4 text-lg sm:text-2xl animate__animated animate__fadeInUp animate__delay-1s font-serif">
+            Software Engineer | Full Stack Developer | Tech Enthusiast
         </p>
-    </footer>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed("#element", {
-          strings: [
-            "<i>Software</i> Engineer.",
-            "Full Stack Developer.",
-            "Tech Enthusiast.",
-            "Wanderer."
-          ],
-          typeSpeed: 50,
-        });
-      </script>
+        <p class="text-blue-300 mt-2 text-lg animate__animated animate__fadeInUp animate__delay-2s">
+            
+            <i class="fas fa-map-marker-alt "></i> ⚲ Noida, UP, India
+        </p>
+        <p class="text-lg animate__animated animate__fadeInUp animate__delay-3s">
+            Email: <a href="mailto:piyushkhati.dev@gmail.com" class="text-blue-500 hover:underline font-serif">piyushkhati.dev@gmail.com</a>
+        </p>
+        <p class="text-lg animate__animated animate__fadeInUp animate__delay-4s">
+            <a href="https://www.linkedin.com/in/piysing14" class="text-blue-500 hover:underline font-serif">LinkedIn</a> |
+            <a href="https://github.com/Piysing14" class="text-blue-500 hover:underline font-serif">GitHub</a>
+        </p>
+
+        <!-- Resume Button -->
+        <a href="Piyush Resume Capgemini.pdf" download class="inline-block mt-6 px-6 py-3 bg-blue-500 text-white rounded-lg text-lg hover:bg-blue-700 transform transition duration-200 hover:scale-105 font-serif">
+            Download Resume
+        </a>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+<section id="about" class="py-12 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <!-- Heading -->
+        <h2 class="text-5xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-600 animate__animated animate__fadeInUp font-serif">
+            About Me
+        </h2>
+        <!-- Description -->
+        <p class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">
+            I am a dedicated full-stack web developer. With a strong foundation in web development, I am currently working and upskilling with AlmaBetter as an SDE 1. I am committed to continuous learning and adapting to new technologies, making me versatile across various tech stacks. My passion for software development drives me to bring diligence, enthusiasm, and innovation to every opportunity.
+        </p>
+    </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="py-12">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-5xl font-bold mb-8 text-center text-5xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-600 font-poppins animate__animated animate__fadeInUp font-serif">Technical Skills</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+            
+            <!-- HTML Tile -->
+            <div class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+                <img src="https://res.cloudinary.com/dgg35phxr/image/upload/v1736328327/HTML_qsxsit.png" alt="HTML" class="w-50 h-50 ">
+                <div class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white">
+
+                </div>
+            </div>
+            <!-- CSS Tile -->
+            <div class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+                <img src="https://play-lh.googleusercontent.com/RTAZb9E639F4JBcuBRTPEk9_92I-kaKgBMw4LFxTGhdCQeqWukXh74rTngbQpBVGxqo" alt="HTML" class="w-50 h-50 ">
+                <div class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white">
+
+                </div>
+            </div>
+            
+            <!-- JavaScript Tile -->
+            <div class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png" alt="JavaScript" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white">
+                </div>
+            </div>
+
+            <!-- C Tile -->
+            <div class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4vPwfiJSj26vNSX05o6W5-RDFmWPeHfxkeA&s" alt="C" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white">
+                </div>
+            </div>
+
+            <!-- C++ Tile -->
+            <div class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+                <img src="https://i.pinimg.com/originals/51/45/df/5145df1033fa60f13b3b7125d2b69554.jpg" alt="C++" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white">
+
+                </div>
+            </div>
+
+            <!-- MongoDB Tile -->
+            <div class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+                <img src="https://lh5.googleusercontent.com/NpCFEToPJTrK4VZ7i4-ggNHgWfOGnLYh7S059c25TOCZunHJv8ljPOHIjnoWB_Y1cxCIQ6dbXf-x4J9G2SXvuUEoo2C3r2tWj3qekRyZRQhk0JT-vGtnVk5oOEFGcRn8hQ-I3CH-5FZXgPJFlG7-4pI" alt="MongoDB" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white">
+                </div>
+            </div>
+
+            <!-- Express.js Tile -->
+            <div class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTfIAbhsVQnM44fbWK7Z5W36azK5EBjDHGi7MTqVZhvKwES-_U7iKHZHinhMM2zr9PbHY&usqp=CAU" alt="Express.js" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white">
+
+                </div>
+            </div>
+
+            <!-- React.js Tile -->
+            <div class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*MF5V_dkybUTcfzwHFh0VSw.jpeg" alt="React.js" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white">
+
+                </div>
+            </div>
+
+            <!-- Node.js Tile -->
+            <div class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+                <img src="https://usefulangle.s3.amazonaws.com/thumbs/nodejs.png" alt="Node.js" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white">
+
+                </div>
+            </div>
+
+            <!-- Bootstrap Tile -->
+            <div class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+                <img src="https://dotbadges.com/wp-content/uploads/2023/01/Bootstrap-Sticker.webp" alt="Bootstrap" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white">
+
+                </div>
+            </div>
+
+            <!-- Tailwind CSS Tile -->
+            <div class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+                <img src="https://dsq.uk/images/News-Views/_1200x900_crop_center-center_none/tailwind-css-logo.jpg" alt="Tailwind CSS" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white">
+
+                </div>
+            </div>
+
+            <!-- VSCode Tile -->
+            <div class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+                <img src="https://cdn.dribbble.com/users/6569/screenshots/16471177/vs_code_dribbble_4x.png" alt="VSCode" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white">
+
+                </div>
+            </div>
+
+            <!-- Git Tile -->
+            <div class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+                <img src="https://www.bleepstatic.com/content/hl-images/2024/06/06/GitHub.jpg" alt="Git" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white">
+
+                </div>
+            </div>
+
+            <!-- REST APIs Tile -->
+            <div class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0lNCH_ATbLokCfQwAfYieRwgSFftV-52OTg&s" alt="REST APIs" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white">
+
+                </div>
+            </div>
+            <!-- REST APIs Tile -->
+            <div class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+                <img src="https://excellence-it.co.uk/wp-content/uploads/2020/05/azure-1024x576.jpg" alt="REST APIs" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white">
+
+                </div>
+            </div>
+            <!-- REST APIs Tile -->
+            <div class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+                <img src="https://5.imimg.com/data5/PC/FS/PG/SELLER-6917958/ux-ui-design-services-500x500.png" alt="REST APIs" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- Certifications Section -->
+<section id="certifications" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-5xl font-extrabold mb-8 text-center text-gray-800 text-5xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-600 font-poppins animate__animated animate__fadeInUp font-serif">Certifications</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- Certification 1 -->
+            <div class="relative overflow-hidden rounded-lg shadow-lg group transform transition hover:scale-105">
+                <img src="https://res.cloudinary.com/dgg35phxr/image/upload/v1736326767/Screenshot_2025-01-08_at_14.29.08_aavzqq.png" alt="Full-Stack Web Development Certificate" class="w-full h-62 object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h3 class="text-xl font-semibold text-white">
+                        <a href="https://www.linkedin.com/in/piysing14/overlay/1723433727793/single-media-viewer/?profileId=ACoAADMKxeoB-gXTlZJd8623XEsMvLCCrh_hRn8" target="_blank" class="hover:underline">
+                            Full-Stack Web Development
+                        </a>
+                    </h3>
+                    <p class="text-sm text-gray-300">Issued by: Apna College</p>
+                    <p class="text-sm text-gray-300">Year: 2024</p>
+                </div>
+            </div>
+            <!-- Certification 2 -->
+            <div class="relative overflow-hidden rounded-lg shadow-lg group transform transition hover:scale-105">
+                <img src="https://res.cloudinary.com/dgg35phxr/image/upload/v1736326984/Screenshot_2025-01-08_at_14.32.50_stmaqq.png" alt="C for Everyone Certificate" class="w-full h-62 object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h3 class="text-xl font-semibold text-white">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/9KGGDM6TWA3R" target="_blank" class="hover:underline">
+                            C for Everyone: Programming Fundamentals
+                        </a>
+                    </h3>
+                    <p class="text-sm text-gray-300">Issued by: University of California, Santa Cruz</p>
+                    <p class="text-sm text-gray-300">Year: 2023</p>
+                </div>
+            </div>
+            <!-- Certification 3 -->
+            <div class="relative overflow-hidden rounded-lg shadow-lg group transform transition hover:scale-105">
+                <img src="https://res.cloudinary.com/dgg35phxr/image/upload/v1736327130/Screenshot_2025-01-08_at_14.35.15_jjnztv.png" alt="Crash Course on Python" class="w-full h-62 object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h3 class="text-xl font-semibold text-white">
+                        <a href="https://www.coursera.org/account/accomplishments/certificate/2CBNJ6D8SGNC" target="_blank" class="hover:underline">
+                            Crash Course on Python
+                        </a>
+                    </h3>
+                    <p class="text-sm text-gray-300">Issued by: Google</p>
+                    <p class="text-sm text-gray-300">Year: 2023</p>
+                </div>
+            </div>
+            <!-- Certification 4 -->
+            <div class="relative overflow-hidden rounded-lg shadow-lg group transform transition hover:scale-105">
+                <img src="https://res.cloudinary.com/dgg35phxr/image/upload/v1736327353/41385315172392_wpojkc.png" alt="AWS Certificate" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300">
+                    <h3 class="text-xl font-semibold text-white">
+                        <a href="https://verified.sertifier.com/en/verify/41385315172392/" target="_blank" class="hover:underline">
+                            Competency Challenge
+                        </a>
+                    </h3>
+                    <p class="text-sm text-gray-300">Issued by: AlmaBetter</p>
+                    <p class="text-sm text-gray-300">Year: 2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-12">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-5xl font-semibold mb-4 text-center text-5xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-600 font-poppins animate__animated animate__fadeInUp font-serif">Experience</h2>
+            <ul class="space-y-4">
+                <li class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">HTML Developer at Unicorn Denmart (04/2022-09/2022) ~ New Delhi</li>
+                <li class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">Software Engineer at Capgemini (10/2022-08/2024) ~ Gurugram, Haryana</li>
+                <li class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">SDE 1 at AlmaBetter (08/2024 - Present) ~ Remote</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-12 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-5xl font-semibold mb-4 text-center text-5xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-600 font-poppins animate__animated animate__fadeInUp font-serif">Projects</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="font-semibold"><a href="https://tranquiltrips.onrender.com/listings" target="_blank" class="text-blue-500 hover:underline">Tranquil-Trips</a></h3>
+                    <p class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">This project is a web application replicating the core features of Airbnb using the MERN stack.
+
+                        <li  class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">User Authentication with JWT</li>
+                        <li  class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">Property Listings</li>
+                       <li class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif"> Review System for Properties</li>
+                        <li class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">Personalized User Profiles</li>
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-semibold"><a href="https://todolist-g6q7.onrender.com/" target="_blank" class="text-blue-500 hover:underline">Todo-List</a></h3>
+                    <p class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">A modern, intuitive To-Do List application developed with React for managing tasks efficiently.
+
+                        <li class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">React Hooks for State Management</li>
+                        <li class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">Component-Based Architecture</li>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div>
+                <h3 class="font-semibold"><a href="https://github.com/Piysing14/Weather-App-by-Piyush" target="_blank" class="text-blue-500 hover:underline">Weather App</a></h3>
+                <p class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">A Weather Application developed using React and integrated with the OpenWeatherMap API.                    .
+
+                    <li class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">Dynamic Data Rendering</li>
+                    <li class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">Weather API Integration</li>
+                    <li class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">Asynchronous Operations</li>
+                </p>
+            </div>
+        </div>
+    </div>
+
+        </div>
+        
+    </section>
+
+   <!-- Footer -->
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-4">
+    <div class="text-center">
+        &copy; 2025 Made with <span class="text-red-500">&hearts;</span> by Piyush
+    </div>
+    <div class="flex items-center justify-center mt-4">
+        <a href="https://www.instagram.com/piyushkhati14" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="w-7 h-7 hover:opacity-75 transition duration-300">
+        </a>
+        <a href="https://www.linkedin.com/in/piysing14" target="_blank" class="ml-4">
+            <img src="https://imgs.search.brave.com/SQsaFNKXL9x2pacICOrPpnY5c1-Eee1Vf0jOmntInaM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2NhL0xpbmtlZElu/X2xvZ29faW5pdGlh/bHMucG5n" alt="LinkedIn" class="w-7 h-7 hover:opacity-75 transition duration-300">
+        </a>
+        <a href="https://github.com/Piysing14" target="_blank" class="ml-4">
+            <img src="https://imgs.search.brave.com/w5LFW4ei3PC6DUOkw2jcpG1OVDzoYhDqENlECFBWUg8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8y/LzI0L0dpdGh1Yl9s/b2dvX3N2Zy5zdmc" alt="GitHub" class="w-7 h-7 hover:opacity-75 transition duration-300">
+        </a>
+    </div>
+</footer>
+
+
+    
+
 </body>
 </html>
-
