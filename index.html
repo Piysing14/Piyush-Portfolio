@@ -8,6 +8,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        nav a {
+          color: #ffffff; 
+          transition: color 0.3s ease, transform 0.2s ease;
+        }
+      
+        nav a:hover {
+          color: #ff6347; 
+        }
+      
+
+        nav a::after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 2px;
+          background: #ff6347;
+          transition: width 0.3s;
+        }
+      
+        nav a:hover::after {
+          width: 100%;
+        }
+      </style>
+      
 </head>
 <body class="bg-gray-50 text-gray-800">
     <div id="splash" class="fixed inset-0 z-50 flex justify-center items-center">
@@ -292,9 +317,9 @@
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-5xl font-semibold mb-4 text-center text-5xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-600 font-poppins animate__animated animate__fadeInUp font-serif">Experience</h2>
             <ul class="space-y-4">
-                <li class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">HTML Developer at Unicorn Denmart (04/2022-09/2022) ~ New Delhi</li>
-                <li class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">Software Engineer at Capgemini (10/2022-08/2024) ~ Gurugram, Haryana</li>
-                <li class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">SDE 1 at AlmaBetter (08/2024 - Present) ~ Remote</li>
+                <li class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">HTML Developer at <b>Unicorn Denmart</b> (04/2022-09/2022) ~ <i>New Delhi</i></li>
+                <li class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">Software Engineer at <b>Capgemini</b> (10/2022-08/2024) ~ <i>Gurugram, Haryana</i></li>
+                <li class="text-lg leading-relaxed text-gray-700 mx-auto animate__animated animate__fadeInUp animate__delay-1s font-serif">SDE 1 at <b>AlmaBetter</b> (08/2024 - Present) ~ <i>Remote</i></li>
             </ul>
         </div>
     </section>
