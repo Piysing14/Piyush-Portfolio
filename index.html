@@ -16,6 +16,8 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@heroicons/react/solid"></script>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
    
@@ -312,26 +314,37 @@
             backSpeed: 30,
             loop: true
           });
-        </script>
-        
-        
-        <p
-        class="mt-2 text-lg font-bold text-black animate__animated animate__fadeInUp animate__delay-2s"
-      >
-        <i class="fas fa-map-marker-alt"></i> ⚲ Delhi, India
-      </p>
+        </script><br>
+
+        <div class="flex items-center justify-center">
+          <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                   class="w-4 h-4 text-red-500" 
+                   fill="currentColor" 
+                   viewBox="0 0 24 24" 
+                   stroke="currentColor">
+                  <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        stroke-width="2" 
+                        d="M12 2C8.134 2 5 5.134 5 9c0 4.5 7 13 7 13s7-8.5 7-13c0-3.866-3.134-7-7-7zm0 3a3 3 0 110 6 3 3 0 010-6z"/>
+              </svg>
+              <span class="text-lg font-bold text-black ">Delhi, India</span>
+          </div>
+      </div>
       
-      <p
-        class="text-lg font-bold text-black animate__animated animate__fadeInUp animate__delay-3s"
+    
+      
+      <div
+        class="text-lg font-bold text-black"
       >
         Email:
         <a
           href="mailto:piyushkhati.dev@gmail.com"
-          class="text-black font-bold hover:text-gray-700 font-serif"
+          class="text-lg text-black font-bold hover:text-gray-700 font-serif"
         >
           piyushkhati.dev@gmail.com
         </a>
-      </p>
+      </div><br>
       
       <div class="mt-4">
         <a
