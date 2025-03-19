@@ -124,6 +124,6 @@ window.addEventListener("DOMContentLoaded", function () {
       alertBox.style.display = "flex";
       setTimeout(() => {
           alertBox.style.display = "none";
-      }, 7000); // Auto-hide after 7 seconds
+      }); 
   }
 });
