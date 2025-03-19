@@ -109,11 +109,14 @@ var typed = new Typed('#element', {
 });
 
 
+let alertShown = false;
+
 window.addEventListener("DOMContentLoaded", function () {
-  if (window.innerWidth <= 768) {
-      setTimeout(() => {
-          alert("For the best experience, please open this website on a desktop browser.");
-      }, 1000); // Delay of 1 second for better user experience
-  }
+    if (!alertShown && window.innerWidth <= 768) {
+        alertShown = true;
+        setTimeout(() => {
+            alert("For the best experience, please open this website on a desktop browser.");
+        }, 1000);
+    }
 });
 
