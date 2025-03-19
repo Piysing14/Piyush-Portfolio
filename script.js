@@ -125,8 +125,8 @@ document.addEventListener("copy", function (e) {
   if (selection) {
       e.preventDefault(); // Prevent default copy behavior
       e.clipboardData.setData("text/plain", 
-          `${selection}\n\n🔒 Hey! Instead of copying, why not explore my website for more awesome content? 😊`
+          `Hey! Instead of copying, why not explore my website for more awesome content? 😊`
       );
-      alert("Copy cat");
+      // alert("Copy cat");
   }
 });
