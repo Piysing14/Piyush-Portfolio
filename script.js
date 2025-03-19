@@ -107,3 +107,9 @@ var typed = new Typed('#element', {
         }, 3000); // Text will appear for 3 seconds
     }
 });
+
+
+function dismissAlert() {
+  document.getElementById("mobileAlert").style.display = "none";
+}
+
