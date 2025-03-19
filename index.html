@@ -692,23 +692,16 @@ class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border
 
 <style>
 @keyframes glow {
-  0% { border-color: white; }  /* Red */
+  0% { border-color: rgb(249, 185, 185); }  /* Red */
  
-  100% { border-color: #1fe9ff; } /* Back to Red */
+  100% { border-color: rgb(219, 69, 69); } /* Back to Red */
 }
 
-.animate-glow {
-  animation: glow 3s infinite alternate;
-  box-shadow: 0 0 15px 5px rgba(20, 255, 247, 0.919); /* Initial glow effect */
-}
-
-.glow-effect {
-
-  animation: glow 2s infinite alternate;
-  transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
-}
 
 .glow-effect:hover {
+  animation: glow 3s infinite alternate;
+  box-shadow: 0 0 15px 5px rgba(255, 105, 71, 0.919); /* Initial glow effect */
+
   transform: scale(1.1); /* Enlarge on hover */
   cursor: default; /* Optional: Adds a pointer cursor for better UX */
 }
