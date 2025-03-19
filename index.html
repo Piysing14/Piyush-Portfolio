@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Piyush's Portfolio 🚀</title>
     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+    <link
       rel="icon"
       href="https://www.logologo.com/freelogos/Pinterest-P-white-rounded-square.png"
     />
@@ -24,6 +28,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.cdnfonts.com/css/anurati" rel="stylesheet" />
     <style>
+
+
       @import url("https://fonts.cdnfonts.com/css/anurati");
 
       nav a {
@@ -177,7 +183,7 @@
               <li>
                 <a
                   href="#experience"
-                  class="hover:text-gray-200 text-lg font-semibold transition duration-200 transform hover:scale-105 font-serif"
+                  class=" hover:text-gray-200 text-lg font-semibold transition duration-200 transform hover:scale-105 font-serif"
                   >Experience</a
                 >
               </li>
@@ -204,10 +210,43 @@
               </li>
               <li>
                 <a
-                  href="https://piysing14.github.io/travel-page/"
-                  class="hover:text-gray-200 text-lg font-semibold transition duration-200 transform hover:scale-105 font-serif"
-                  >Travel</a
-                >
+  href="https://piysing14.github.io/travel-page/"
+  class=" hover:text-white travel-link text-lg font-semibold transition duration-200 transform hover:scale-105 font-serif"
+>
+  Travel
+  <i class="fas fa-plane plane-icon"></i>
+</a>
+
+<style>
+  .travel-link {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.plane-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    color: #ffffff; /* Airplane color */
+}
+
+.travel-link:hover .plane-icon {
+    transform: translate(-50%, -50%) scale(1); 
+    opacity: 1;
+}
+
+.travel-link:hover {
+    color: transparent; /* Hide 'Travel' text */
+}
+
+
+</style>
               </li>
             </ul>
           </nav>
@@ -295,6 +334,8 @@
           alt="Piyush Singh"
           class="w-48 h-48 sm:w-56 sm:h-56 mx-auto rounded-full shadow-xl transform transition duration-500 hover:scale-110"
         />
+
+
     
         <!-- Heading and Description -->
 
@@ -591,21 +632,46 @@ class="group flex items-center space-x-4">
           </h2>
           <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
             <!-- HTML Tile -->
-            <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
-            >
-              <img
-                src="https://res.cloudinary.com/dgg35phxr/image/upload/v1736328327/HTML_qsxsit.png"
-                alt="HTML"
-                class="w-50 h-50"
-              />
-              <div
-                class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white"
-              ></div>
-            </div>
+<div
+class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
+>
+<img
+  src="https://res.cloudinary.com/dgg35phxr/image/upload/v1736328327/HTML_qsxsit.png"
+  alt="HTML"
+  class="w-50 h-50"
+/>
+<div
+  class="absolute inset-0 bg-black bg-opacity-10 flex justify-center items-center text-center text-white"
+></div>
+</div>
+
+<style>
+@keyframes glow {
+  0% { border-color: white; }  /* Red */
+ 
+  100% { border-color: #1fe9ff; } /* Back to Red */
+}
+
+.animate-glow {
+  animation: glow 3s infinite alternate;
+  box-shadow: 0 0 15px 5px rgba(20, 255, 247, 0.919); /* Initial glow effect */
+}
+
+.glow-effect {
+
+  animation: glow 2s infinite alternate;
+  transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+}
+
+.glow-effect:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+  cursor: default; /* Optional: Adds a pointer cursor for better UX */
+}
+</style>
+
             <!-- CSS Tile -->
             <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
+            class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
             >
               <img
                 src="https://play-lh.googleusercontent.com/RTAZb9E639F4JBcuBRTPEk9_92I-kaKgBMw4LFxTGhdCQeqWukXh74rTngbQpBVGxqo"
@@ -619,7 +685,7 @@ class="group flex items-center space-x-4">
 
             <!-- JavaScript Tile -->
             <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
+            class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
             >
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png"
@@ -633,7 +699,7 @@ class="group flex items-center space-x-4">
 
             <!-- C Tile -->
             <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
+            class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
             >
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4vPwfiJSj26vNSX05o6W5-RDFmWPeHfxkeA&s"
@@ -647,7 +713,7 @@ class="group flex items-center space-x-4">
 
             <!-- C++ Tile -->
             <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
+            class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
             >
               <img
                 src="https://i.pinimg.com/originals/51/45/df/5145df1033fa60f13b3b7125d2b69554.jpg"
@@ -661,7 +727,7 @@ class="group flex items-center space-x-4">
 
             <!-- MongoDB Tile -->
             <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
+            class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
             >
               <img
                 src="https://lh5.googleusercontent.com/NpCFEToPJTrK4VZ7i4-ggNHgWfOGnLYh7S059c25TOCZunHJv8ljPOHIjnoWB_Y1cxCIQ6dbXf-x4J9G2SXvuUEoo2C3r2tWj3qekRyZRQhk0JT-vGtnVk5oOEFGcRn8hQ-I3CH-5FZXgPJFlG7-4pI"
@@ -675,7 +741,7 @@ class="group flex items-center space-x-4">
 
             <!-- MariaDB Tile -->
             <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
+            class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
             >
               <img
             src="https://ordba.net/assets/images/topic_image/mariadb-logo1.png"
@@ -689,7 +755,7 @@ class="group flex items-center space-x-4">
 
             <!-- Express.js Tile -->
             <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
+            class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
             >
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTfIAbhsVQnM44fbWK7Z5W36azK5EBjDHGi7MTqVZhvKwES-_U7iKHZHinhMM2zr9PbHY&usqp=CAU"
@@ -703,7 +769,7 @@ class="group flex items-center space-x-4">
 
             <!-- React.js Tile -->
             <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
+            class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
             >
               <img
                 src="https://miro.medium.com/v2/resize:fit:1400/1*MF5V_dkybUTcfzwHFh0VSw.jpeg"
@@ -717,7 +783,7 @@ class="group flex items-center space-x-4">
 
             <!-- Node.js Tile -->
             <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
+            class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
             >
               <img
                 src="https://usefulangle.s3.amazonaws.com/thumbs/nodejs.png"
@@ -732,7 +798,7 @@ class="group flex items-center space-x-4">
 
             <!-- Next.js Tile -->
             <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
+            class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
             >
               <img
                 src="https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F4unrrweuaj1wyh25npgt.jpeg
@@ -748,7 +814,7 @@ class="group flex items-center space-x-4">
 
             <!-- Bootstrap Tile -->
             <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
+            class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
             >
               <img
                 src="https://dotbadges.com/wp-content/uploads/2023/01/Bootstrap-Sticker.webp"
@@ -762,11 +828,11 @@ class="group flex items-center space-x-4">
 
             <!-- Tailwind CSS Tile -->
             <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
+            class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
             >
               <img
-                src="https://dsq.uk/images/News-Views/_1200x900_crop_center-center_none/tailwind-css-logo.jpg"
-                alt="Tailwind CSS"
+            src="https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fdxy1c2bvl6odeo52dodk.jpg"
+              alt="Tailwind CSS"
                 class="w-full h-full object-cover"
               />
               <div
@@ -776,7 +842,7 @@ class="group flex items-center space-x-4">
 
             <!-- VSCode Tile -->
             <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
+            class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
             >
               <img
                 src="https://cdn.dribbble.com/users/6569/screenshots/16471177/vs_code_dribbble_4x.png"
@@ -790,7 +856,7 @@ class="group flex items-center space-x-4">
 
             <!-- Git Tile -->
             <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
+            class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
             >
               <img
                 src="https://www.bleepstatic.com/content/hl-images/2024/06/06/GitHub.jpg"
@@ -804,7 +870,7 @@ class="group flex items-center space-x-4">
 
             <!-- REST APIs Tile -->
             <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
+            class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
             >
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0lNCH_ATbLokCfQwAfYieRwgSFftV-52OTg&s"
@@ -817,7 +883,7 @@ class="group flex items-center space-x-4">
             </div>
             <!-- REST APIs Tile -->
             <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
+            class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
             >
               <img
                 src="https://excellence-it.co.uk/wp-content/uploads/2020/05/azure-1024x576.jpg"
@@ -830,7 +896,7 @@ class="group flex items-center space-x-4">
             </div>
             <!-- REST APIs Tile -->
             <div
-              class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden"
+            class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border-transparent animate-glow glow-effect"
             >
               <img
                 src="https://5.imimg.com/data5/PC/FS/PG/SELLER-6917958/ux-ui-design-services-500x500.png"
