@@ -127,6 +127,5 @@ document.addEventListener("copy", function (e) {
       e.clipboardData.setData("text/plain", 
           `Hey! Instead of copying, why not explore my website for more awesome content? 😊`
       );
-      // alert("Copy cat");
   }
 });
