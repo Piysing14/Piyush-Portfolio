@@ -577,41 +577,6 @@ class="group flex items-center space-x-4">
 
 
 
-<div class="mobile-alert" id="mobileAlert">
-  For the best experience, please use a desktop browser.
-</div>
-<style>
-  .mobile-alert {
-    display: none; /* Hidden by default */
-}
-
-@media (max-width: 768px) {
-    .mobile-alert {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #ffcccb; /* Light red for visibility */
-        color: #a94442; /* Dark red text */
-        text-align: center;
-        padding: 10px 15px;
-        font-weight: bold;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 9999;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        animation: fadeOut 7s forwards; /* Auto-hide after 7s */
-    }
-}
-
-@keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0; visibility: hidden; }
-}
-
-</style>
-
-
 
       </section>
 
@@ -648,8 +613,11 @@ class="group flex items-center space-x-4">
   <h3 class="text-3xl font-bold text-gray-700 mb-4 text-center">
     GitHub Statistics
 </h3>
-<p id="fade-in-text" class="text-center text-gray-500 opacity-0 transition-opacity duration-1000">
-  Hover to flip the image!</p>
+<p id="fade-in-text" 
+   class="hidden lg:block text-center text-gray-500 opacity-0 hover:opacity-100 transition-opacity duration-1000">
+   Hover to flip the image!
+</p>
+
 
   <div class="flip-card">
       <div class="flip-card-inner">
