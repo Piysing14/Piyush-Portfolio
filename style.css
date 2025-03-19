@@ -318,4 +318,27 @@ body {
     color: blue
   }
   
+  #endorsements {
+    background-color: #f3f4f6;
+    padding: 40px;
+    text-align: center;
+}
+
+.endorsement-card {
+    background-color: #ffffff;
+    border-left: 4px solid #0077b5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.author {
+    color: #0077b5;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
   
