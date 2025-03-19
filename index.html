@@ -28,6 +28,56 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.cdnfonts.com/css/anurati" rel="stylesheet" />
     <style>
+  
+
+      .box {
+        text-align: center;
+        margin-top: 20%;
+        position: relative;
+    }
+
+    .box button {
+        color: rgb(0, 0, 0);
+        border: 2px solid rgb(0, 195, 255);
+        border-radius: 7px;
+        padding: 10px 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        background: rgb(0, 195, 255);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: background 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    }
+
+    .box button:hover {
+
+        color: white;
+        border-color: white;
+        box-shadow: 0 0 15px rgb(0, 194, 253);
+        background-color: black;
+
+    }
+
+    /* Diamond Shape Stars */
+    .stars {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background-color: white;
+        transform: rotate(45deg);
+        box-shadow: 0 0 10px white;
+        opacity: 1;
+        transition: transform 0.5s ease-out, opacity 0.5s ease-in-out;
+    }
+
+    .stars.large {
+        width: 10px;
+        height: 10px;
+    }
+        
+
+      
 
 
       @import url("https://fonts.cdnfonts.com/css/anurati");
@@ -389,16 +439,18 @@
         </a>
       </div><br>
       
-      <div class="mt-4">
-        <a
+      <div class="mt-4 box">
+        <button
+        id="glowButton"
+
           href="https://piyush-resume-request.onrender.com/" 
-          class="bg-purple-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-purple-600 transition-all duration-300"
         >
           Request Resume
-        </a>
+        </button>
       </div>
 
     </div>
+    
     
 
         <!-- Social Media Icons -->
@@ -1496,6 +1548,52 @@ class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border
             alert("Please fill out all fields before submitting.");
           }
         });
+
+        const button = document.getElementById("glowButton");
+let stars = [];
+
+button.addEventListener("mouseover", () => {
+    removeStars();
+    for (let i = 0; i < 5; i++) { 
+        let star = document.createElement("div");
+        star.classList.add("stars");
+        if (Math.random() > 0.5) star.classList.add("large");
+        
+        // Append stars inside the button
+        button.appendChild(star);  
+
+        let buttonRect = button.getBoundingClientRect();
+        let startX = Math.random() * buttonRect.width;
+        let startY = Math.random() * buttonRect.height;
+        
+        star.style.left = `${startX}px`;
+        star.style.top = `${startY}px`;
+
+        setTimeout(() => {
+            let angle = Math.random() * 2 * Math.PI;
+            let distance = Math.random() * 30 + 10; // Reduced distance to stay closer
+            let moveX = Math.cos(angle) * distance;
+            let moveY = Math.sin(angle) * distance;
+            star.style.transform = `rotate(45deg) translate(${moveX}px, ${moveY}px)`;
+            star.style.opacity = "1";
+        }, 50);
+        
+        stars.push(star);
+    }
+});
+
+button.addEventListener("mouseleave", () => {
+    removeStars();
+});
+
+function removeStars() {
+    stars.forEach(star => {
+        star.style.opacity = "0";
+        setTimeout(() => star.remove(), 500);
+    });
+    stars = []; 
+}
+
     </script>
   </body>
 </html>
