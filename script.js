@@ -90,3 +90,20 @@ var typed = new Typed('#element', {
     backSpeed: 30,
     loop: true
   });
+
+
+
+  document.addEventListener("scroll", function () {
+    const statsSection = document.querySelector(".text-3xl");
+    const fadeInText = document.getElementById("fade-in-text");
+
+    const rect = statsSection.getBoundingClientRect();
+    const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+    if (isVisible) {
+        fadeInText.classList.add("visible");
+        setTimeout(() => {
+            fadeInText.classList.remove("visible");
+        }, 3000); // Text will appear for 3 seconds
+    }
+});
