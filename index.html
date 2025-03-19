@@ -579,7 +579,6 @@ class="group flex items-center space-x-4">
 
 <div class="mobile-alert" id="mobileAlert">
   For the best experience, please use a desktop browser.
-  <button class="close-btn" onclick="dismissAlert()">✖</button>
 </div>
 <style>
   .mobile-alert {
@@ -589,7 +588,7 @@ class="group flex items-center space-x-4">
 @media (max-width: 768px) {
     .mobile-alert {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         background-color: #ffcccb; /* Light red for visibility */
         color: #a94442; /* Dark red text */
@@ -601,19 +600,13 @@ class="group flex items-center space-x-4">
         width: 100%;
         z-index: 9999;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        animation: fadeOut 7s forwards; /* Auto-hide after 7s */
     }
+}
 
-    .close-btn {
-        background: none;
-        border: none;
-        color: #a94442;
-        font-size: 18px;
-        cursor: pointer;
-    }
-
-    .close-btn:hover {
-        color: #721c24; /* Darker red on hover */
-    }
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
 }
 
 </style>

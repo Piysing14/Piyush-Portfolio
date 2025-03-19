@@ -109,7 +109,12 @@ var typed = new Typed('#element', {
 });
 
 
-function dismissAlert() {
-  document.getElementById("mobileAlert").style.display = "none";
-}
+window.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth <= 768) {
+      setTimeout(() => {
+          alert("For the best experience, please open this website on a desktop browser.");
+      }, 1000); // Delay of 1 second for better user experience
+  }
+});
+
 
