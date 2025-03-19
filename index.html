@@ -697,14 +697,17 @@ class="relative bg-gray-100 rounded-lg shadow-sm overflow-hidden border-4 border
   100% { border-color: rgb(219, 69, 69); } /* Back to Red */
 }
 
+.glow-effect {
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smooth transition */
+}
 
 .glow-effect:hover {
   animation: glow 3s infinite alternate;
-  box-shadow: 0 0 15px 5px rgba(255, 105, 71, 0.919); /* Initial glow effect */
-
+  box-shadow: 0 0 15px 5px rgba(255, 105, 71, 0.919); /* Glow effect */
   transform: scale(1.1); /* Enlarge on hover */
   cursor: default; /* Optional: Adds a pointer cursor for better UX */
 }
+
 </style>
 
             <!-- CSS Tile -->
