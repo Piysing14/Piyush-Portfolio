@@ -117,13 +117,3 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
-window.addEventListener("DOMContentLoaded", function () {
-  const alertBox = document.getElementById("mobileAlert");
-  if (window.innerWidth <= 768) {
-      alertBox.style.display = "flex";
-      setTimeout(() => {
-          alertBox.style.display = "none";
-      }); 
-  }
-});
