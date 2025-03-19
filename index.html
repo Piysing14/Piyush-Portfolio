@@ -140,43 +140,6 @@
   </head>
 
   <body class="bg-[#fbfcfc] text-gray-800 min-h-screen overflow-x-hidden p-0">
-
-    
-
-    <!-- <div
-      id="splash"
-      class="fixed inset-0 z-50 flex justify-center items-center bg-black"
-    >
-      <video
-        id="splash-video"
-        autoplay
-        muted
-        loop
-        playsinline
-        class="absolute inset-0 w-full h-full object-cover"
-      >
-        <source
-          src="https://res.cloudinary.com/dgg35phxr/video/upload/v1736348485/Intro_tmywel.mp4"
-        />
-      </video>
-    </div>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        if (window.innerWidth <= 768) {
-          // Remove splash immediately on small screens
-          document.getElementById("splash").remove();
-          document.getElementById("main-content").classList.remove("hidden");
-        } else {
-          // Normal behavior for larger screens
-          setTimeout(() => {
-            document.getElementById("splash").classList.add("hidden");
-            document.getElementById("main-content").classList.remove("hidden");
-          }, 4000); // 4-second delay
-        }
-      });
-    </script> -->
-
     <style>
       /* Ensures main content is visible once splash is hidden */
       #main-content {
@@ -646,26 +609,120 @@ class="group flex items-center space-x-4">
         </p>
         
 
+
           <!-- GitHub Contribution Graph -->
-          <div class="my-8">
-            <h3 class="text-3xl font-bold text-gray-700 mb-4">
-              GitHub Statistics
-            </h3>
-            <img
-              src="https://github-readme-stats.vercel.app/api?username=Piysing14&show_icons=true&theme=gotham"
-              alt="GitHub Stats"
-              class="mx-auto"
-            />
+<div class="my-8 perspective">
+  <!-- Static Heading -->
+  <h3 class="text-3xl font-bold text-gray-700 mb-4 text-center">
+      GitHub Statistics
+  </h3>
+
+  <div class="flip-card">
+      <div class="flip-card-inner">
+          <!-- Front Side (First Image) -->
+          <div class="flip-card-front">
+              <img
+                  src="https://github-readme-stats.vercel.app/api?username=Piysing14&show_icons=true&theme=gotham"
+                  alt="GitHub Stats"
+                  class="original-dimensions"
+              />
           </div>
-          <div class="my-8">
-            <img
-              src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Piysing14&theme=gotham"
-              alt="GitHub Stats"
-              class="mx-auto"
-            />
+
+          <!-- Back Side (Second Image) -->
+          <div class="flip-card-back">
+              <img
+                  src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Piysing14&theme=gotham"
+                  alt="GitHub Profile"
+                  class="original-dimensions"
+              />
           </div>
-        </div>
+      </div>
+  </div>
+</div>
+
+
+
       </section>
+
+    <style>
+      .perspective {
+        perspective: 1000px;
+    }
+    
+    .flip-card {
+        width: 70%;  
+        margin: 0 auto;
+        position: relative;
+        height: 300px; 
+        border-radius: 10px;
+        overflow: hidden; 
+    }
+    
+    .flip-card-inner {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.8s ease-in-out;
+    }
+    
+    /* Flip Effect for Large Screens */
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .flip-card-front {
+        background-color: #f3f4f6;
+        z-index: 2;
+    }
+    
+    .flip-card-back {
+        background-color: whitesmoke;
+        transform: rotateY(180deg);
+    }
+    
+    /* Image Styling */
+    .original-dimensions {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    /* Disable Flip on Small Screens */
+    @media (max-width: 768px) {
+        .flip-card {
+            height: auto; /* Remove fixed height for proper stacking */
+        }
+    
+        .flip-card-inner {
+            display: block; /* Stack images vertically */
+            transform: none; /* Disable flipping */
+        }
+    
+        .flip-card-front,
+        .flip-card-back {
+            position: static; /* Stack one below another */
+            transform: none; /* Ensure no rotation */
+            backface-visibility: visible;
+        }
+    
+        .flip-card-back {
+            display: block; /* Ensure second image appears */
+            margin-top: 10px; /* Add spacing between stacked images */
+        }
+    }
+    
+    </style>
 
       <!-- Skills Section -->
       <section id="skills" class="py-12  bg-gray-100">
