@@ -120,3 +120,17 @@ window.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+document.addEventListener("copy", function (e) {
+  // Custom message to replace copied text
+  const customMessage = "Hey! Instead of copying, why not explore my website for more awesome content? 😊";
+
+  // Prevent the default copied text
+  e.preventDefault();
+
+  // Add custom text to the clipboard
+  e.clipboardData.setData("text/plain", customMessage);
+
+  // Optional: Show a message on the screen
+  // alert("Copied content has been customized! 😉");
+});
+
