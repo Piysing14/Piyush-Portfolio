@@ -117,4 +117,11 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+window.addEventListener("DOMContentLoaded", function () {
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+  if (isMobile) {
+      alert("For the best experience, please open this website on a desktop browser.");
+  }
+});
 
