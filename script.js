@@ -117,11 +117,13 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-window.addEventListener("DOMContentLoaded", function () {
-  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-  if (isMobile) {
-      alert("For the best experience, please open this website on a desktop browser.");
+window.addEventListener("DOMContentLoaded", function () {
+  const alertBox = document.getElementById("mobileAlert");
+  if (window.innerWidth <= 768) {
+      alertBox.style.display = "flex";
+      setTimeout(() => {
+          alertBox.style.display = "none";
+      }, 7000); // Auto-hide after 7 seconds
   }
 });
-

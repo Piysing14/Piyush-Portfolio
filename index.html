@@ -646,7 +646,40 @@ class="group flex items-center space-x-4">
 
       </section>
 
+      <div class="mobile-alert" id="mobileAlert">
+        For the best experience, please use a desktop browser.
+    </div>
+    
+
     <style>
+      .mobile-alert {
+        display: none; /* Hidden by default */
+    }
+    
+    @media (max-width: 768px) {
+        .mobile-alert {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffcccb; /* Light red for visibility */
+            color: #a94442; /* Dark red text */
+            text-align: center;
+            padding: 10px 15px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeOut 12s forwards; 
+        }
+    }
+    
+    @keyframes fadeOut {
+        0% { opacity: 1; }
+        100% { opacity: 0; visibility: hidden; }
+    }
+    
 
       #fade-in-text.visible {
         opacity: 1;
