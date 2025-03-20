@@ -125,7 +125,24 @@ document.addEventListener("copy", function (e) {
   if (selection) {
       e.preventDefault(); // Prevent default copy behavior
       e.clipboardData.setData("text/plain", 
-          `Hey! Instead of copying, why not explore my website for more awesome content? 😊`
+          `Nice try buddy 😊`
       );
   }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const lazyImages = document.querySelectorAll("img.lazy");
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              const img = entry.target;
+              img.src = img.dataset.src;
+              img.classList.remove("lazy");
+              observer.unobserve(img);
+          }
+      });
+  });
+
+  lazyImages.forEach(img => observer.observe(img));
 });
