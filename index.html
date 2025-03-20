@@ -1222,14 +1222,52 @@ loading="lazy"
                       class="hidden md:block w-6 h-6 bg-indigo-500 rounded-full border-4 border-white absolute left-1/2 transform -translate-x-1/2"
                   ></div>
               </div>
+<style>
 
+  @keyframes movingBorder {
+    0% {
+        box-shadow: 0 0 10px 2px rgb(108, 255, 108);
+    }
+    25% {
+        box-shadow: 0 0 20px 4px rgb(108, 255, 108);
+    }
+    50% {
+        box-shadow: 0 0 30px 6px rgb(108, 255, 108);
+    }
+    100% {
+        box-shadow: 0 0 20px 4px rgb(108, 255, 108);
+    }
+}
+
+.animate-moving-border {
+    position: relative;
+    border-radius: 10px;
+
+    color: white;            /* Text visibility */
+
+    z-index: 0;             /* Ensures content remains on top */
+}
+
+.animate-moving-border::before {
+    content: '';
+    position: absolute;
+    inset: -4px; /* Extends the glow beyond the element */
+    border-radius: inherit;
+    background: linear-gradient(90deg, rgb(108, 255, 108), rgba(108, 255, 108, 0));
+    animation: movingBorder 3s infinite linear;
+    z-index: -1; /* Places the glow effect behind the content */
+}
+
+
+
+</style>
               <!-- Experience Item 3 -->
-              <div class="md:flex items-center group relative">
-                  <div class="md:w-1/2 md:pr-8">
+              <div class="md:flex items-center group relative ">
+                  <div class="md:w-1/2 md:pr-8 ">
                       <a
                           href="#"
                           aria-label="Shreemate Financial Services - SDE 1 Role"
-                          class="block"
+                          class="block animate-moving-border"
                       >
                           <div
                               class="bg-white backdrop-blur-md bg-opacity-30 shadow-xl border border-gray-200 rounded-2xl p-6 transform transition-transform hover:scale-105 hover:shadow-red-500 hover:shadow-[0_0_20px_5px_rgba(255,0,0,0.7)]"
