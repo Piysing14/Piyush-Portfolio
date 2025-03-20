@@ -400,21 +400,43 @@
       </div><br>
       
       <div class="mt-4 box">
-        <button
-        onclick="alert(`currently not looking for a switch`)"
-    id="glowButton"
-    disabled
-    title="Currently not looking for a job switch"
-    style="cursor: not-allowed; opacity: 0.6;"
->
-    Request Resume
-</button>
+        <button id="glowButton" disabled>
+          Request Resume
+      </button>
+      
+      <div class="tooltip">Currently not looking for a job switch</div>
+      
 
       </div>
 
     </div>
     
+    <style>
+      #glowButton {
+        cursor: not-allowed;
+        opacity: 0.6;
+        position: relative;
+    }
     
+    .tooltip {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        top: -30px;  /* Adjust position */
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+    
+    #glowButton:hover + .tooltip {
+        display: block;
+    }
+    
+    </style>
 
        
 
