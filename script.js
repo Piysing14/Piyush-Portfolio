@@ -85,7 +85,7 @@ document.getElementById("glowButton").addEventListener("click", function () {
 
 
 var typed = new Typed('#element', {
-    strings: ['Full Stack Dev' ,'Tech Enthusiast' , 'Problem Solver','Traveller...', '  '],
+    strings: ['Adobe Workfront specialist','Full Stack Dev' ,'Tech Enthusiast' , 'Problem Solver', '  '],
     typeSpeed: 50,
     backSpeed: 30,
     loop: true
