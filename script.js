@@ -70,16 +70,21 @@ function removeStars() {
 }
 
 document.getElementById("glowButton").addEventListener("click", function () {
-  window.location.href = "https://piyush-resume-request.onrender.com/";
+  window.location.href = "#contact";
+  // window.location.href = "https://piyush-resume-request.onrender.com/";
 });
 document.getElementById("glowButton").addEventListener("click", function () {
   const button = this; // Reference the button itself
-  button.disabled = true; // Disable the button
+  // button.disabled = true; // Disable the button
   button.innerText = "Please wait....."; // Change text to "Please wait....."
 
   // Redirect after a short delay (optional)
   setTimeout(() => {
-    window.location.href = "https://piyush-resume-request.onrender.com/";
+    button.innerText = "Request Resume";
+      window.location.href = "#contact";
+      
+
+    // window.location.href = "https://piyush-resume-request.onrender.com/";
   }, 1000); // Delay for UX enhancement
 });
 
