@@ -71,7 +71,6 @@ function removeStars() {
 
 document.getElementById("glowButton").addEventListener("click", function () {
   window.location.href = "#contact";
-  // window.location.href = "https://piyush-resume-request.onrender.com/";
 });
 document.getElementById("glowButton").addEventListener("click", function () {
   const button = this; // Reference the button itself
@@ -84,7 +83,6 @@ document.getElementById("glowButton").addEventListener("click", function () {
       window.location.href = "#contact";
       
 
-    // window.location.href = "https://piyush-resume-request.onrender.com/";
   }, 1000); // Delay for UX enhancement
 });
 
