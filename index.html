@@ -1298,6 +1298,10 @@ loading="lazy"
                   ></div>
               </div>
 
+
+
+
+
               <!-- Experience Item 4 -->
               <div class="md:flex items-center group flex-row-reverse">
                 <div class="md:w-1/2 md:pl-8">
@@ -1316,7 +1320,7 @@ src="https://www.unsw.edu.au/content/dam/images/myit/2024-08-application-logos/2
                                 </h3>
                                 <p class="text-gray-700">Adobe Systems</p>
                                 <p class="text-sm text-gray-500 mt-1">
-                                    April 2024 - Present •
+                                    April 2024 - August 2026 •
                                     <span class="font-medium">Noida</span>
                                 </p>
                             </div>
@@ -1328,22 +1332,118 @@ src="https://www.unsw.edu.au/content/dam/images/myit/2024-08-application-logos/2
                 ></div>
             </div>
 
-              <!-- Fireball Loader at the End of Timeline -->
-              <div class="flex items-center justify-center mt-12 hidden sm:flex">
-                  <div class="relative w-24 h-19 flex items-center justify-center">
-                      <!-- Inner Core (Fast Pulsing) -->
-                      <div class="absolute w-16 h-16  bg-indigo-600 rounded-full animate-ping-fast"></div>
+             <!-- Experience Item 5 -->
+<div class="md:flex items-center group relative">
+    <div class="md:w-1/2 md:pr-8">
+        <div
+            class="bg-white backdrop-blur-md bg-opacity-30 shadow-xl border border-gray-200 rounded-2xl p-6 transform transition-transform hover:scale-105"
+        >
+            <div class="flex items-center gap-4">
+                <img
+                    loading="lazy"
+                    src="https://media.licdn.com/dms/image/v2/D560BAQEjpnBJgcnDSQ/company-logo_200_200/company-logo_200_200/0/1718801268945/truinc_logo?e=2147483647&v=beta&t=EBVLrKfLxQmjUX5ucbA3qmctNUAD8YFHsieMwH7kZUw"
+                    alt="TRU INC Logo"
+                    class="w-12 h-12 rounded-full"
+                />
 
-                      <!-- Outer Flames (Flickering Fire) -->
-                      <div class="absolute w-20 h-20  bg-indigo-500 rounded-full blur-xl opacity-70 animate-flame"></div>
-                      <div class="absolute w-24 h-24  bg-purple-500 rounded-full blur-3xl opacity-40 animate-flame"></div>
-                  </div>
-              </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-blue-600">
+                        Adobe Workfront/ Fusion Developer
+                    </h3>
 
-              
-          </div>
-      </div>
-  </div>
+                    <p class="text-gray-700">
+                        TRU INC
+                    </p>
+
+                    <p class="text-sm text-gray-500 mt-1">
+                        August 2026 - Present •
+                        <span class="font-medium">Remote</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="hidden md:block w-6 h-6 bg-blue-500 rounded-full border-4 border-white absolute left-1/2 transform -translate-x-1/2"
+    ></div>
+</div>
+
+             <!-- Fireball Loader at the End of Timeline -->
+<div class="relative flex items-center justify-center mt-12 hidden sm:flex z-20">
+
+    <!-- Fireball -->
+    <div class="relative w-24 h-39 flex items-center justify-center">
+
+        <!-- Outer Flames -->
+        <div
+            class="absolute w-28 h-24 bg-purple-500 rounded-full blur-3xl opacity-40 animate-flame"
+        ></div>
+
+        <div
+            class="absolute w-20 h-20 bg-indigo-500 rounded-full blur-xl opacity-70 animate-flame"
+        ></div>
+
+        <!-- Inner Core -->
+        <div
+            class="absolute w-16 h-16 bg-indigo-600 rounded-full animate-ping-fast"
+        ></div>
+
+        <!-- Live Experience -->
+        <div
+            class="relative z-30 flex flex-col items-center justify-center text-white text-center"
+        >
+            <span
+                id="experienceYears"
+                class="text-sm font-bold leading-none"
+            >
+                0.00
+            </span>
+
+            <span
+                class="text-[12px] font-medium mt-2">
+                YOE </span>
+                 
+                
+            </span>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Live Experience Counter -->
+<script>
+    function updateExperience() {
+
+        // Experience started April 1, 2022
+        const startDate = new Date("2022-04-26T00:00:00");
+
+        // Current date and time
+        const now = new Date();
+
+        // Difference
+        const difference = now - startDate;
+
+        // Convert to years
+        const years =
+            difference / (1000 * 60 * 60 * 24 * 365.2425);
+
+        // Update display
+        const element = document.getElementById("experienceYears");
+
+        if (element) {
+            element.textContent = years.toFixed(2);
+        }
+    }
+
+    // Run immediately
+    updateExperience();
+
+    // Keep it live
+    setInterval(updateExperience, 1000);
+</script>
 </section>
 
 <style>
